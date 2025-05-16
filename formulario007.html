@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo de formulari com javascript</title>
+</head>
+<body>
+    <h1>estudos de formilarios com javascript anos de nacimentos</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="data">What year you were born?</label>
+            <input type="number" name="nacimento" id="data" min="1990" max="2300" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="edad">your ege in:</label>
+            <output id="edad">0</output>
+        </p>
+        <p>
+            <input type="submit" value="send">
+            <input type="reset" value="delet">
+        </p>
+
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            edad.innerHTML = Number(atual) - Number(data.value)
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

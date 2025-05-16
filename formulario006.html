@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> estudos de formularios </title>
+</head>
+<body>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <P>
+            <label for="rol">rolagem:</label>
+            <input type="range" name="rolagem" id="rol" min="0" max="100" value="5" oninput="rol.innerHTML = Number(rol.value)">
+            <output id="rol">5</output>
+
+        </P>
+    
+        <p>
+            <input type="submit" value="envia">
+            <input type="reset" value="limpa">
+        </p>
+
+    </form>
+</body>
+</html>
