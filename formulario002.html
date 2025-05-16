@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag formlario</title>
+</head>
+<body>
+    <h1>study of form</h1>
+    <form action="cadastro.php" method="get">
+
+        <p> <label for="collegamento"> email:</label> <input type="email" name="email" id="collegamento" required
+            autocomplete="email" size="30" maxlength="50" placeholder="email"></p>
+
+        <p><label for="media">Media:</label> 
+            <input type="number" name="number" id="media" min="0" max="10" placeholder="0 a 10" step="a.1" required></p>
+
+        <p>
+           <label for="collegamento">month: </label><input type="month" name="month" id="collegamento">
+        </p>   
+        <p><label for="collegamento">date:</label> <input type="datetime-local" name="date" id="collegamento"></p> 
+
+        <p><label for="collegamento">time: </label>
+            <input type="time" name="time" id="collegamento">
+        </p>
+
+      
+        <p><input type="submit" value="send">
+        <input type="reset" value="reset">
+        </p>
+
+       
+
+
+
+    </form>
+</body>
+</html>
