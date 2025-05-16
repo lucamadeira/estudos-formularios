@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pag form</title>
+  </head>
+  <body>
+    <h1>estudo de formularios cadastro</h1>
+    <form action="cadastro.php" method="get">
+      <p>
+        <label for="collegamento">Nome:</label>
+        <input type="text" name="name" id="collegamento" required autocomplete="username" size="30"/>
+      </p>
+      <p>
+        <label for="collegamento">cognome:</label>
+        <input type="password" name="cognome" id="collegamento" required minlength="8" autocomplete="current-password">
+      </p>
+
+      <p>
+        <input type="submit" value="envio" />
+        <input type="reset" value="limpa">
+      </p>
+    </form>
+  </body>
+</html>
